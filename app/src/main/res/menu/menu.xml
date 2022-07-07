@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_copy"
+        android:title="copy"
+        android:icon="@drawable/ic_favorite"
+        android:iconTint="@color/white"
+        app:showAsAction="withText"/>
+
+    <item android:id="@+id/menu_cute"
+        android:title="cut"
+        android:actionLayout="@layout/menu_custom"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/menu_paste"
+        android:title="paste"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/menu_insert_photo"
+        android:title="insertPhoto"
+        app:showAsAction="ifRoom" />
+
+</menu>

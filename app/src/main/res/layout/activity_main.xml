@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_pop_up_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pop up menu"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_pop_up_menu_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pop up menu style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pop_up_menu" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_pop_up_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pop up window"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pop_up_menu_style" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_action_mode_primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="action mode default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pop_up_window"  />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_action_mode_floating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="action mode floating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_action_mode_primary" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_context_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="context menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_action_mode_floating" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
